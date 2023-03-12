@@ -1,5 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS  1
-#pragma warning(disable:6031)
 #include <stdio.h>
 #include <string.h>
 // 共享单车类
@@ -32,12 +30,12 @@ void return_shared_bike(SharedBike* bike, float duration) {
 }
 // 打印共享单车信息函数
 void print_shared_bike_info(SharedBike* bike) {
-    printf("ID: %!d(MISSING)\n", bike->id);
-    printf("Brand: %!!(MISSING)s(MISSING)\n", bike->brand);
-    printf("Price: %!!(MISSING)f(MISSING)\n", bike->price);
-    printf("Status: %!d(MISSING)\n", bike->status);
-    printf("Rent Times: %!d(MISSING)\n", bike->rent_times);
-    printf("Total Income: %!!(MISSING)f(MISSING)\n", bike->total_income);
+    printf("ID: %d\n", bike->id);
+    printf("Brand: %s\n", bike->brand);
+    printf("Price: %.2f\n", bike->price);
+    printf("Status: %d\n", bike->status);
+    printf("Rent Times: %d\n", bike->rent_times);
+    printf("Total Income: %.2f\n", bike->total_income);
 }
 //int main() {
 //    SharedBike bike;
